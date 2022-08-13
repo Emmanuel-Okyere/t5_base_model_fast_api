@@ -7,7 +7,21 @@ For more information about the model, visit https://huggingface.co/t5-base
 
 # Installation
 Fork the project at https://github.com/Emmanuel-Okyere/shoppharma.git
-
+```sh
+  ├── README.md
+  ├── pyproject.toml *** the package manager. 
+  ├── poetry.lock *** poetry
+  ├── Dockerfile *** Docker file
+  ├── pyproject *** main application folder
+  │     ├── api
+  │     │   ├── translation.py
+        |   schemes
+        |   ├── translation.py 
+        |   core
+        |   ├── config.py ***setting for the application
+        └── main.py *** driver for the application
+  
+  ```
 Building with Docker in the forked directory
 ```
 
@@ -27,3 +41,8 @@ Navigate to http://127.0.0.1:8000/
 **Note** On startup, the t5-base model would be downloaded.
 
 The application was developed with a 24GB RAM and 1.80GHz CPU Speed.
+
+## Visuals
+![Home Page](https://github.com/Emmanuel-Okyere/readme_images/blob/main/ShopPharma/English%20-%20German.png?raw=true)
+![Home Page](https://github.com/Emmanuel-Okyere/readme_images/blob/main/ShopPharma/English%20to%20French.png?raw=true)
+![Home Page](https://github.com/Emmanuel-Okyere/readme_images/blob/main/ShopPharma/English%20to%20Romania.png?raw=true)
