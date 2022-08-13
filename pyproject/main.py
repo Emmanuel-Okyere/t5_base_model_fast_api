@@ -42,6 +42,8 @@ async def translate(
     input_text,
 ):
     """Get the text from the user and translate to desired language"""
+    if source_language == destination_language:
+        return input_text
     texts = translate_text(
         model, tokenizer, source_language, destination_language, input_text
     )
