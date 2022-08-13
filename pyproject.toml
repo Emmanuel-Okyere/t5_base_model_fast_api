@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pyproject"
+version = "0.1.0"
+description = ""
+authors = ["emmanuel-gyateng <57065066+Emmanuel-Okyere@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.79.0"
+uvicorn = "^0.18.2"
+gunicorn = "^20.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
