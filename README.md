@@ -13,8 +13,8 @@ Fork the project at https://github.com/Emmanuel-Okyere/shoppharma.git
   ├── poetry.lock *** poetry
   ├── Dockerfile *** Docker file
   ├── pyproject *** main application folder
-  │     ├── api
-  │     │   ├── translation.py
+        ├── api
+        │   ├── translation.py
         |   schemes
         |   ├── translation.py 
         |   core
