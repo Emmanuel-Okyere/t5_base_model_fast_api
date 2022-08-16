@@ -55,5 +55,5 @@ async def translate(request: Translations):
         model, tokenizer, source_language, destination_language, input_text
     )
     if texts == "":
-        return "can not be translated"
+        return ""
     return texts
