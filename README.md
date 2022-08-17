@@ -14,11 +14,12 @@ Fork the project at https://github.com/Emmanuel-Okyere/shoppharma.git
   ├── Dockerfile *** Docker file
   ├── pyproject *** main application folder
         ├── api
-        │   ├── translation.py
+        │     ├── translation.py
         |   schemes
-        |   ├── translation.py 
+        |     ├── translation.py 
         |   core
-        |   ├── config.py ***setting for the application
+        |     ├── config.py ***setting for the application
+        |   translate_service.py *** helper function for the application
         └── main.py *** driver for the application
   
   ```
