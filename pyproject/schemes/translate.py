@@ -1,11 +1,21 @@
 """Translates a given text"""
 
+from enum import Enum
+from pydantic import BaseModel
 
-def translate_text(model, tokenizer, source, destination, texts):
-    """Translates the text depending on the entry"""
-    input_ids = tokenizer(
-        f"translate {source} to {destination}: " + texts, return_tensors="pt"
-    ).input_ids
-    outputs = model.generate(input_ids)
-    decoded = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    return decoded
+
+class T5ModelLanguages(str, Enum):
+    """Enumerating languages supported by T5-base model"""
+
+    ENGLISH = "English"
+    FRENCH = "French"
+    ROMANIAN = "Romanian"
+    GERMAN = "German"
+
+
+class Translations(BaseModel):
+    """The request body parameter declaration"""
+
+    source_language: T5ModelLanguages
+    destination_language: T5ModelLanguages
+    input_text: str
